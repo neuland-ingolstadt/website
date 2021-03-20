@@ -1,0 +1,39 @@
+/* terminal.css by Gioni06, License: https://github.com/Gioni06/terminal.css/blob/master/LICENSE */
+@import url('./terminal.min.css');
+
+@font-face {
+  font-family: 'Inconsolata';
+  src: url('./Inconsolata-VariableFont_wdth,wght.ttf');
+}
+:root {
+  --font-stack: Inconsolata, Consolas, monospace;
+  --global-font-size: 17px;
+  --page-width: 860px;
+}
+* {
+  font-family: var(--font-stack);
+}
+.btn.btn-ghost:hover {
+  color: var(--invert-font-color);
+  background: var(--primary-color);
+}
+.cols {
+  display: flex;
+}
+.cols > * {
+  flex: 1;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #222225;
+    --font-color: #e8e9ed;
+    --invert-font-color: #222225;
+    --secondary-color: #a3abba;
+    --tertiary-color: #a3abba;
+    --primary-color: #62c4ff;
+    --error-color: #ff3c74;
+    --progress-bar-background: #3f3f44;
+    --progress-bar-fill: #62c4ff;
+    --code-bg-color: #3f3f44;
+  }
+}
