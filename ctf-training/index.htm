@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Neuland Ingolstadt</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../root.css">
+  </head>
+  <body class="terminal">
+    <div class="container">
+      <div class="terminal-nav">
+        <header class="terminal-logo">
+          <div class="logo terminal-prompt">Neuland Ingolstadt CTF Training</div>
+        </header>
+      </div>
+    </div>
+    <div class="container">
+      <p>
+        Hier findest du verschiedene kleine Aufgaben wie sie üblicherweise in CTFs zu finden sind.
+        <br />
+        Du hast noch nie an einem CTF teilgenommen aber bist interessiert? Kein Problem, versuche dein Können an einer
+        der einfachen Aufgaben.
+        <br />
+        Auch für erfahrene Spieler gibt es Übungs-Aufgaben zur Überbrückung der Zeit bis zum nächsten CTF Wettbewerb.
+        <br />
+        Aus Gewohnheitsgründen ist der Rest der Webseite auf Englisch.
+      </p>
+
+      <h1>Baby PWN (beginner, binary exploitation)</h1>
+      <p>
+        You can connect to a service running the binary using
+        <code>nc informatik.sexy 1337</code> <br />
+        Can you extract the flag?
+        <br />
+        <a href="files/baby-pwn.c" target="_blank"><button class="btn btn-primary btn-ghost">Source Code</button></a>
+      </p>
+
+      <h1>Encrypted Image (easy, forensics)</h1>
+      <p>
+        We encrypted an image with this simple python script. Unfortunately we lost the encryption key.
+        Maybe you can recover our information from the encrypted message?
+        <br />
+        <a href="files/encrypt-image.py" target="_blank"><button class="btn btn-primary btn-ghost">Source Code</button></a>
+        <a href="files/message.bin" target="_blank"><button class="btn btn-primary btn-ghost">Data</button></a>
+      </p>
+
+      <h1>RSA coprime (hard, crypto)</h1>
+      <p>
+        TBD
+      </p>
+
+      <h1>Flag submission</h1>
+      <p>
+        You found a flag? You can enter it here to see if it is correct.
+        <!-- TODO prices/gimics etc. for correct solves? -->
+
+        <div id="responseAlert" class="terminal-alert terminal-alert-error hidden">
+          Incorrect Flag!
+        </div>
+        <div class="form-group">
+          <input id="flagInput" name="flag" type="text" />
+        </div>
+        <button id="checkFlagButton" class="btn btn-primary btn-block btn-ghost">Check Flag</button>
+      </p>
+    </div>
+
+    <script src="flag_check.js"></script>
+  </body>
+</html>
