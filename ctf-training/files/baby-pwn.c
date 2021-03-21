@@ -9,11 +9,11 @@ int main()
 
 
 	// challenge relevant code starts here
-	char name[64];
+	char name[128];
 	char flag[32] = " ** redacted ** ";
 
 	printf("Enter your name:\n");
-	fgets(name, 64, stdin);
+	fgets(name, 128, stdin);
 
 	printf("Hello ");
 	printf(name);
