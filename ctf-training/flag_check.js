@@ -5,7 +5,7 @@
 		const data = encoder.encode(text);
 		const buff = await crypto.subtle.digest('SHA-256', data);
 		const array = new Uint8Array(buff)
-		return [...array].map(x => x.toString(16)).join('')
+		return [...array].map(x => x.toString(16).padStart(2, '0')).join('')
 	}
 
 	async function checkFlag(flag) {
