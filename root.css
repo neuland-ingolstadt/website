@@ -37,7 +37,9 @@
     --code-bg-color: #3f3f44;
   }
 }
-
 .hidden {
   display: none;
+}
+.logo img {
+  width: 300px;
 }
