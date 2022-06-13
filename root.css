@@ -43,6 +43,16 @@
 .logo img {
   width: 300px;
 }
-.partner-logo {
+.partner-logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.xitaso-logo {
   width: 200px;
+  margin: 0px 10px 10px 0px;
+}
+.epos-logo {
+  width: 160px;
+  margin: 0px 10px 10px 0px;
 }
