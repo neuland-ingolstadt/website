@@ -48,11 +48,15 @@
   flex-wrap: wrap;
   align-items: center;
 }
-.xitaso-logo {
-  width: 200px;
-  margin: 0px 10px 10px 0px;
+.partner-logo {
+  margin: 0px 20px 10px 0px;
 }
-.epos-logo {
-  width: 160px;
-  margin: 0px 10px 10px 0px;
+.xitaso-logo > img {
+  height: 50px;
+}
+.epos-logo > img {
+  height: 60px;
+}
+.brigk-logo > img {
+  height: 80px;
 }
