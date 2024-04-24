@@ -51,12 +51,12 @@
 .partner-logo {
   margin: 0px 20px 10px 0px;
 }
-.xitaso-logo > img {
-  height: 50px;
+.partner-link:hover {
+  background: transparent;
 }
-.epos-logo > img {
+.epos-logo img {
   height: 60px;
 }
-.brigk-logo > img {
-  height: 80px;
+.exp-logo img {
+  height: 50px;
 }
