@@ -17,6 +17,12 @@
   color: var(--invert-font-color);
   background: var(--primary-color);
 }
+.btn-group {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap: wrap;
+}
 .cols {
   display: flex;
 }
@@ -47,6 +53,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  gap: 64px;
 }
 .partner-logo {
   margin: 0px 20px 10px 0px;
@@ -59,4 +66,17 @@
 }
 .exp-logo img {
   height: 50px;
+}
+
+@media (max-width: 585px) {
+  .btn-group{
+    flex-direction: column;
+  }
+
+  .btn-group > a > button {
+    width: 100%;
+  }
+  .partner-logos {
+    justify-content: center;
+  }
 }
