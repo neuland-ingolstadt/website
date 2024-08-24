@@ -5,24 +5,30 @@
   font-family: 'Inconsolata';
   src: url('./Inconsolata-VariableFont_wdth,wght.ttf');
 }
+
 :root {
   --font-stack: Inconsolata, Consolas, monospace;
   --global-font-size: 17px;
   --page-width: 860px;
 }
+
 * {
   font-family: var(--font-stack);
 }
+
 .btn.btn-ghost:hover {
   color: var(--invert-font-color);
   background: var(--primary-color);
 }
+
 .cols {
   display: flex;
 }
-.cols > * {
+
+.cols>* {
   flex: 1;
 }
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background-color: #222225;
@@ -37,29 +43,55 @@
     --code-bg-color: #3f3f44;
   }
 }
+
 .hidden {
   display: none;
 }
+
 .logo img {
   width: 300px;
 }
+
 .partner-logos {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
+
 .partner-logo {
   margin: 0px 20px 10px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.partner-link:hover {
+
+.badge-link:hover {
   background: transparent;
 }
-.epos-logo img, .exp-logo img {
+
+.epos-logo img,
+.exp-logo img {
   height: auto;
   max-height: 50px;
   width: auto;
   object-fit: contain;
+
+}
+
+.app-stores {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin: 1cap 0 0.5cap 0;
+}
+
+.store-badge {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+}
+
+.store-badge:hover {
+  background-color: transparent;
 }
