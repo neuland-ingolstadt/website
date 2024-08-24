@@ -1,1 +1,4 @@
 ctf-training/files/flag-*
+
+# MacOS
+.DS_Store
